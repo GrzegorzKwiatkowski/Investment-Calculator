@@ -21,7 +21,7 @@ export class UserImputComponent {
   durationValue = '10';
 onSubmit() {
 this.calculate.emit({
-  initialInvestment: +this.annualInvestmentValue,
+  initialInvestment: +this.initialInvestmentValue,
   duration: +this.durationValue,
   expectedReturn: +this.expectedReturnValue,
   annualInvestment: +this.annualInvestmentValue
