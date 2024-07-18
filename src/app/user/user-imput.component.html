@@ -1,4 +1,4 @@
-<form>
+<form (ngSubmit)="onSubmit()">
   <div class="input-group">
     <p>
       <label for="initial-investment">Initial Investment:</label>
@@ -7,6 +7,7 @@
         id="initial-investment"
         name="initial-investment"
         placeholder="insert value"
+        [(ngModel)]="initialInvestmentValue"
       />
     </p>
     <p>
@@ -16,6 +17,7 @@
         id="annual-investment"
         name="annual-investment"
         placeholder="insert value"
+        [(ngModel)]="annualInvestmentValue"
       />
     </p>
     <p>
@@ -25,6 +27,7 @@
         id="expected-return"
         name="expected-return"
         placeholder="insert value"
+        [(ngModel)]="expectedReturnValue"
       />
     </p>
     <p>
@@ -34,6 +37,7 @@
         id="duration"
         name="duration"
         placeholder="insert value"
+        [(ngModel)]="durationValue"
       />
     </p>
   </div>
